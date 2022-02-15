@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Deploy Development') {
       steps {
-            bat "mvn clean package deploy -DmuleVersion=4.4.0 -Dusername=sumedha_Jan -Dpassword=Lambda=mc2  -DapplicationName=ExperienceBmsNew -Denvironment=dev -Dworkers=1 -DworkerType=Micro -Danypoint.platform.client_id=f285ab05d02b4f37b1409bfcffdcdecc   -Danypoint.platform.client_secret=ED20687772D14485b0a781b6b36897a8 -DmuleDeploy"
+            bat "mvn clean package deploy -DmuleVersion=4.4.0 -Dusername=sumedha_Jan -Dpassword=Lambda=mc2  -DapplicationName=ExperienceBmsNew -Denvironment=Sandbox -Dworkers=1 -DworkerType=Micro -Danypoint.platform.client_id=f285ab05d02b4f37b1409bfcffdcdecc   -Danypoint.platform.client_secret=ED20687772D14485b0a781b6b36897a8 -DmuleDeploy"
             echo "deploy success"
       }
     }
